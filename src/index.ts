@@ -60,3 +60,12 @@ type Quantity = 50 | 100;
 let quantity: Quantity = 100;
 
 type Metrics = "cm" | "inch";
+
+// nullable Types
+
+function greet(name: String | null | undefined) {
+	if (name) console.log(name);
+	else console.log("hola!");
+}
+
+greet(undefined);
